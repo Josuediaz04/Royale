@@ -1,0 +1,6 @@
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\bin\Debug\CRoyale.Domain.dll
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\bin\Debug\CRoyale.Domain.pdb
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\obj\Debug\CRoyale.Domain.csproj.AssemblyReference.cache
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\obj\Debug\CRoyale.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\obj\Debug\CRoyale.Domain.dll
+C:\Users\Josue\source\repos\Royale\CRoyale.Domain\obj\Debug\CRoyale.Domain.pdb

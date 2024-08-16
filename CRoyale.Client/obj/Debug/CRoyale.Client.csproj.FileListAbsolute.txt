@@ -1,0 +1,13 @@
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\bin\Debug\CRoyale.Client.exe.config
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\bin\Debug\CRoyale.Client.exe
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\bin\Debug\CRoyale.Client.pdb
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\bin\Debug\CRoyale.Domain.dll
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\bin\Debug\CRoyale.Domain.pdb
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.csproj.AssemblyReference.cache
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.Form1.resources
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.Properties.Resources.resources
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.csproj.GenerateResource.cache
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.csproj.CoreCompileInputs.cache
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.csproj.CopyComplete
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.exe
+C:\Users\Josue\source\repos\Royale\CRoyale.Client\obj\Debug\CRoyale.Client.pdb
