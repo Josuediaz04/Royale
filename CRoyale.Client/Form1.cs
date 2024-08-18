@@ -20,34 +20,52 @@ namespace CRoyale.Client
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			Card player1 = new Card();
+			player1.Name = "Golem";
+			Card player2 = new Card("Pekka");
 
-			Card mago = new Card();
-			mago.Name = "Mago";
-			Card pekka = new Card("Pekka");
-			MessageBox.Show($" {mago.Name} - {mago.HP} - {mago.Damage} - {mago.Shield} ");
-			MessageBox.Show($" {pekka.Name} - {pekka.HP} - {pekka.Damage} - {mago.Shield}");
+			player2.ScaleLevel(player2.Level + 5);
+			player1.ScaleLevel(player1.Level + 10);
 
-			pekka.ScaleLevel(pekka.Level +  1);
-			MessageBox.Show($" {pekka.Name} - {pekka.HP} - {pekka.Damage} - {mago.Shield}");
+			ControlPlay engine = new ControlPlay();
+
+			for (int i = 0; i < 5; i++)
+			{
+				MessageBox.Show("Jugando! Turno del " + player1.Name);
+				engine.Attack(player1.Damage, player2);
+				if (engine.ValidateHP(player2.HP))
+				{
+					MessageBox.Show(player2.Name + " PERDIO");
+					MessageBox.Show($"{player2.Name}. {player2.HP} ");
+					engine.GainXP(player1);
+					MessageBox.Show(player1.Name + " GANA y Obtiene mas experiencia: " + player1.XP);
+					return;
+				}
+				else
+				{
+					MessageBox.Show($"{player2.Name}. {player2.HP} - {player2.Damage} - {player2.Shield} ");
+				}
+
+				MessageBox.Show("Jugando! Turno del " + player2.Name);
+				engine.Attack(player2.Damage, player1);
+				if (engine.ValidateHP(player1.HP))
+				{
+					MessageBox.Show(player1.Name + " PERDIO");
+					MessageBox.Show($"{player1.Name}. {player1.HP}");
+					engine.GainXP(player2);
+					MessageBox.Show(player2.Name + " GANA y Obtiene mas experiencia: " + player2.XP);
+					return;
+				}
+				else
+				{
+					MessageBox.Show($"{player1.Name}. {player1.HP} - {player1.Damage} - {player1.Shield} ");
+				}
 
 
-			Controls  engine = new Controls();
 
-			int golpeMago = engine.Attack(mago.Damage, pekka.Shield);
-			pekka.HP -= golpeMago;
+			}
 
-			MessageBox.Show("peka verguiado");
-
-			//MessageBox.Show($" {mago.Name} - {mago.HP} - {mago.Damage} - {mago.Shield} ");
-			MessageBox.Show($" {pekka.Name} - {pekka.HP} - {pekka.Damage} - {mago.Shield}");
-
-			MessageBox.Show("mago verguiado");
-
-			int golepPekka = engine.Attack(pekka.Damage, mago.Shield);
-			mago.HP -= golepPekka;
-			MessageBox.Show($" {mago.Name} - {mago.HP} - {mago.Damage} - {mago.Shield} ");
 
 
 		}
 	}
-}
